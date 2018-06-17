@@ -82,16 +82,6 @@ module Recurly
     def logger=(logger)
       if ENV['RECURLY_INSECURE_DEBUG'].to_s.downcase == 'true'
         @logger = logger
-        puts <<-MSG
-        [WARNING] Recurly logger enabled. The logger has the potential to leak
-        PII and should never be used in production environments.
-        MSG
-      else
-        puts <<-MSG
-        [WARNING] Recurly logger has been disabled. If you wish to use it,
-        only do so in a non-production environment and make sure
-        the `RECURLY_INSECURE_DEBUG` environment variable is set to `true`.
-        MSG
       end
     end
 
