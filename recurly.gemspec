@@ -28,9 +28,9 @@ Gem::Specification.new do |s|
     s.add_development_dependency('nokogiri','~> 1.8.2')
   end
 
-  s.add_development_dependency 'rake', '~> 11.3'
+  s.add_development_dependency 'rake', '~> 13.2'
   s.add_development_dependency 'minitest', '~> 5.8.0'
-  s.add_development_dependency 'addressable',  '~> 2.4.0'
+  s.add_development_dependency 'addressable',  '~> 2.8.6'
   s.add_development_dependency 'webmock',  '~> 2.3.2'
   s.add_development_dependency 'simplecov'
 
